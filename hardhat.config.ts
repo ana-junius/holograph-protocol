@@ -1,7 +1,7 @@
 declare var global: any;
 import fs from 'fs';
 import path from 'path';
-// import '@typechain/hardhat';
+import '@typechain/hardhat';
 import 'hardhat-gas-reporter';
 import '@holographxyz/hardhat-deploy-holographed';
 import '@nomiclabs/hardhat-waffle';
@@ -228,6 +228,10 @@ const config: HardhatUserConfig = {
         return line;
       },
     }),
+  },
+  typechain: {
+    outDir: "typechain-types", // Where to save the generated types (default: "typechain")
+    target: "ethers-v5", // Target library (e.g., "ethers-v6", "ethers-v5", "truffle-v5")
   },
   paths: {
     sources: 'src',
