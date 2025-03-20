@@ -230,8 +230,8 @@ const config: HardhatUserConfig = {
     }),
   },
   typechain: {
-    outDir: "typechain-types", // Where to save the generated types (default: "typechain")
-    target: "ethers-v5", // Target library (e.g., "ethers-v6", "ethers-v5", "truffle-v5")
+    outDir: 'typechain-types', // Where to save the generated types (default: "typechain")
+    target: 'ethers-v5', // Target library (e.g., "ethers-v6", "ethers-v5", "truffle-v5")
   },
   paths: {
     sources: 'src',
